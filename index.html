@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <button onclick="interface.addBook()">Add Book</button>
+    <button onclick="interface.bookList(library)">List Books</button>
+    <button onclick="interface.listUnreadBooks(library)">List Unread Books</button>
+    <input type="text" id="bookTitle" placeholder="Enter book title">
+    <button onclick="interface.markAsRead(document.getElementById('bookTitle').value)">Mark as Read</button>
+    <button onclick="interface.removeBook(document.getElementById('bookTitle').value)">Remove Book</button>
+    <ul id="bookList"></ul>
+    
+    <script src="scripts/library.js"></script>
+</body>
+</html>
